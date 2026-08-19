@@ -307,6 +307,15 @@ footer.site-footer p{ margin: 0; color: var(--muted); font-size: 0.9rem; }
 }
 
 /* ---------- About page extras ---------- */
+
+.about-hero {
+  padding-bottom: 15px;
+}
+
+.about-details {
+  padding-top: 15px;
+}
+
 .about-intro{
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -314,11 +323,16 @@ footer.site-footer p{ margin: 0; color: var(--muted); font-size: 0.9rem; }
   align-items: center;
   padding-bottom: 30px;
 }
-.about-intro .portrait{
+.about-intro .portrait {
+  width: 100%;
+  max-width: 320px;  
+  justify-self: center;
+
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
 }
+
 .about-intro .portrait img{ aspect-ratio: 4/5; object-fit: cover; object-position: top center; }
 .about-intro h1{ text-transform: uppercase; font-size: clamp(2.4rem, 5vw, 3.4rem); }
 .about-intro p{ color: var(--muted); font-size: 1.08rem; }
