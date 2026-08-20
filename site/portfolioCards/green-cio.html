@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green CIO | Hanna Magnusson</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="logo">Hanna Magnusson</a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      &#9776;
+    </button>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+<section class="section">
+
+  <div class="wrap">
+
+    <a href="../portfolio.html" class="project-link">
+      ← Back to projects
+    </a>
+
+
+    <div class="section-head" style="margin-top: 32px;">
+
+      <h2>Green CIO</h2>
+
+      <p>
+        An educational serious game developed during my exchange at
+        INSA Lyon in collaboration with Crédit Agricole Group
+        Infrastructure Platform, exploring responsible digital practices
+        and Green IT through decision-making.
+      </p>
+
+    </div>
+
+
+    <div class="project-tags" style="margin-bottom: 32px;">
+      <span>Godot</span>
+      <span>GDScript</span>
+      <span>Game Development</span>
+      <span>Green IT</span>
+      <span>Serious Games</span>
+    </div>
+
+
+    <div class="card">
+
+      <h3>About the project</h3>
+
+      <p>
+        Green CIO was developed as a group project during my exchange
+        semester at INSA Lyon. The project was proposed by Crédit Agricole
+        Group Infrastructure Platform and focused on creating an engaging
+        way to raise awareness about responsible digital practices and
+        Green IT.
+      </p>
+
+      <p style="margin-top: 14px;">
+        Digital services such as cloud storage, AI and online systems can
+        often feel immaterial, even though they depend on data centers,
+        electricity, cooling, hardware manufacturing and physical
+        infrastructure.
+      </p>
+
+      <p style="margin-top: 14px;">
+        Instead of explaining these environmental impacts through a
+        traditional presentation, we created a game where the player
+        experiences the consequences of digital and business decisions.
+      </p>
+
+    </div>
+
+
+    <div class="two-col" style="margin: 32px 0;">
+
+      <img
+        src="../assets/project4.png"
+        alt="Green CIO introduction"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+      <img
+        src="../assets/project4-1.png"
+        alt="Green CIO main office hub"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>You are the CIO</h3>
+
+      <p>
+        In the game, the player takes the role of a Chief Information
+        Officer and is responsible for making decisions across the
+        company.
+      </p>
+
+      <p style="margin-top: 14px;">
+        Every decision affects two main scores: the company's financial
+        position and its environmental impact. Some sustainable choices
+        require greater investment, while cheaper alternatives may have
+        a larger environmental cost.
+      </p>
+
+      <p style="margin-top: 14px;">
+        The goal is therefore not simply to choose the most sustainable
+        option every time, but to keep the company financially viable
+        while making responsible decisions and managing risk.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Decisions and consequences</h3>
+
+      <p>
+        The scenarios are divided into four areas: IT, Operations, HR
+        and Business. This allowed us to show that responsible digital
+        strategy extends beyond servers and software and is connected
+        to decisions across an entire organisation.
+      </p>
+
+      <p style="margin-top: 14px;">
+        Players encounter questions about topics such as cloud services,
+        AI, cybersecurity, data storage, hardware, transport, suppliers,
+        remote work and energy use.
+      </p>
+
+      <p style="margin-top: 14px;">
+        Some decisions can also trigger unexpected events later in the
+        game, including cyberattacks, data loss, media scandals and
+        reputation problems. Earlier decisions can therefore influence
+        what happens later.
+      </p>
+
+    </div>
+
+
+    <div class="two-col" style="margin: 32px 0;">
+
+      <img
+        src="../assets/project4-2.png"
+        alt="Example decision in Green CIO"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+      <img
+        src="../assets/project4-3.png"
+        alt="Unexpected event in Green CIO"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Research and scoring</h3>
+
+      <p>
+        A major part of the project was designing a scoring system that
+        was meaningful without making the game unnecessarily complex.
+        The environmental consequences of the choices were therefore
+        not assigned randomly.
+      </p>
+
+      <p style="margin-top: 14px;">
+        We researched environmental impacts connected to different
+        scenarios and used real-world environmental resources to guide
+        the scoring. Examples include comparing transport by truck and
+        train, purchasing new versus refurbished devices, and storing
+        unnecessary data.
+      </p>
+
+      <p style="margin-top: 14px;">
+        The game is not intended to function as an exact CO₂ calculator.
+        Instead, the data was simplified into an educational model that
+        is realistic enough to support learning while remaining
+        understandable and playable.
+      </p>
+
+    </div>
+
+
+    <div class="two-col">
+
+      <div class="card">
+
+        <h3>Game development</h3>
+
+        <p>
+          Green CIO was developed using Godot and GDScript. The game
+          consists of separate scenes for the introduction, main
+          gameplay and final evaluation.
+        </p>
+
+        <p style="margin-top: 14px;">
+          A separate game state keeps track of scores, previous answers
+          and event flags, allowing earlier decisions to affect later
+          parts of the game.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Data-driven scenarios</h3>
+
+        <p>
+          Questions, answer options, score impacts, explanations and
+          conditional events are stored in JSON rather than being
+          hard-coded into the main gameplay logic.
+        </p>
+
+        <p style="margin-top: 14px;">
+          This makes the game easier to maintain and allows new
+          scenarios to be added without changing the core gameplay
+          implementation.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="card" style="margin-top: 10px;">
+
+      <h3>What I learned</h3>
+
+      <p>
+        This project showed me that developing an educational game is
+        not only about implementing game mechanics. We also had to
+        consider pedagogy, clarity, realism and game balance.
+      </p>
+
+      <p style="margin-top: 14px;">
+        One of the biggest challenges was finding the right balance
+        between accuracy and accessibility. Making the scenarios too
+        simple would reduce their educational value, while making them
+        too realistic would make the game overly technical.
+      </p>
+
+      <p style="margin-top: 14px;">
+        The project also gave me experience working on a real challenge
+        proposed by an industry partner while combining software
+        development with sustainability research and educational game
+        design.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Source code</h3>
+
+      <p>
+        The source code for Green CIO is available on GitHub.
+      </p>
+
+      <a
+        href="https://github.com/Leopold-Wahlbeck/Green-Cio"
+        target="_blank"
+        rel="noopener"
+        class="project-link"
+        style="display:inline-block; margin-top:16px;"
+      >
+        View on GitHub →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+
+    <p>&copy; 2026 Hanna Magnusson</p>
+
+    <div class="footer-links">
+
+      <a
+        href="https://www.linkedin.com/in/hanna-magnusson-28787324a"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
+      <a href="mailto:hanna012008@hotmail.com">
+        Email
+      </a>
+
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="../script.js"></script>
+
+</body>
+</html>

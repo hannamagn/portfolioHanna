@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Interactive Language Map | Hanna Magnusson</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="logo">Hanna Magnusson</a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      &#9776;
+    </button>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+<section class="section">
+
+  <div class="wrap">
+
+    <a href="../portfolio.html" class="project-link">
+      ← Back to projects
+    </a>
+
+
+    <div class="section-head" style="margin-top: 32px;">
+
+      <h2>Interactive Map of the World's Languages</h2>
+
+      <p>
+         My bachelor's thesis in Software Engineering at Chalmers University
+        of Technology, developed as a full-stack web application for exploring
+        the geographical distribution of languages around the world.A full-stack interactive world map developed as a bachelor's
+        thesis project at Chalmers University of Technology.
+      </p>
+
+    </div>
+
+
+    <div class="project-tags" style="margin-bottom: 32px;">
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>NestJS</span>
+      <span>MongoDB</span>
+      <span>MapLibre</span>
+      <span>Python</span>
+    </div>
+
+
+    <div class="card">
+
+      <h3>About the project</h3>
+
+      <p>
+        The goal of the project was to create an interactive map that
+        makes it easier to explore the geographical distribution of
+        languages around the world.
+      </p>
+
+      <p style="margin-top: 14px;">
+        Users can search for languages and visualize where they are
+        spoken directly on a world map. The application also provides
+        linguistic information such as language family and number
+        of speakers.
+      </p>
+
+      <p style="margin-top: 14px;">
+        The project combines linguistic information from Wikidata with
+        geographical data from OpenStreetMap.
+      </p>
+
+    </div>
+
+
+    <div class="two-col" style="margin: 32px 0;">
+
+      <img
+        src="../assets/project1.png"
+        alt="Interactive language map"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+      <img
+        src="../assets/project1-2.png"
+        alt="Language information displayed on the map"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Exploring languages</h3>
+
+      <p>
+        Languages can be selected through a searchable list. When a
+        language is selected, the countries and regions where it is
+        spoken are visualized directly on the map.
+      </p>
+
+      <p style="margin-top: 14px;">
+        Multiple languages can be displayed simultaneously using
+        different outline colours, making it possible to compare
+        their geographical distributions.
+      </p>
+
+      <p style="margin-top: 14px;">
+        Users can also interact directly with countries on the map
+        to explore both official and other spoken languages.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>System architecture</h3>
+
+      <p>
+        The application consists of a React and TypeScript frontend,
+        a NestJS backend and a MongoDB Atlas database.
+      </p>
+
+      <p style="margin-top: 14px;">
+        MapLibre is used to render the interactive map. The frontend
+        communicates with the backend to retrieve linguistic and
+        geographical information, which is returned as GeoJSON and
+        displayed on the map.
+      </p>
+
+    </div>
+
+
+    <div class="two-col" style="margin: 32px 0;">
+
+      <img
+        src="../assets/project1.3.png"
+        alt="System architecture"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+      <img
+        src="../assets/project1-4.png"
+        alt="Database collection process"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Collecting the data</h3>
+
+      <p>
+        Linguistic metadata is collected from Wikidata, including
+        information about language families, number of speakers and
+        where languages are spoken.
+      </p>
+
+      <p style="margin-top: 14px;">
+        Geographical data is retrieved from OpenStreetMap and represented
+        as polygons containing the coordinates required to visualize
+        countries and regions on the map.
+      </p>
+
+      <p style="margin-top: 14px;">
+        The collected data is processed before being stored in MongoDB
+        Atlas and made available to the application.
+      </p>
+
+    </div>
+
+
+    <div class="two-col">
+
+      <div class="card">
+
+        <h3>Frontend</h3>
+
+        <p>
+          The frontend was developed using React and TypeScript, with
+          MapLibre handling the interactive map and visualization of
+          geographical data.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Backend</h3>
+
+        <p>
+          The NestJS backend provides endpoints for retrieving languages,
+          geographical information and languages spoken within selected
+          countries.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="card" style="margin-top: 10px;">
+
+      <h3>Source code</h3>
+
+      <p>
+        The application was originally hosted online during the project,
+        but the deployment is no longer active. The source code is
+        available on GitHub.
+      </p>
+
+      <a
+        href="https://github.com/hannamagn/InteractiveLanguageMap2"
+        target="_blank"
+        rel="noopener"
+        class="project-link"
+        style="display:inline-block; margin-top:16px;"
+      >
+        View on GitHub →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+
+    <p>&copy; 2026 Hanna Magnusson</p>
+
+    <div class="footer-links">
+      <a
+        href="https://www.linkedin.com/in/hanna-magnusson-28787324a"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
+      <a href="mailto:hanna012008@hotmail.com">
+        Email
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pacman - Barbie Edition | Hanna Magnusson</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="logo">Hanna Magnusson</a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      &#9776;
+    </button>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+<section class="section">
+
+  <div class="wrap">
+
+    <a href="../portfolio.html" class="project-link">
+      ← Back to projects
+    </a>
+
+    <div class="section-head" style="margin-top: 32px;">
+      <h2>Pacman - Barbie Edition</h2>
+
+      <p>
+        A Barbie-inspired recreation of the classic Pacman game,
+        developed in Java as a software design project at Chalmers
+        University of Technology.
+      </p>
+    </div>
+
+
+    <div class="project-tags" style="margin-bottom: 32px;">
+      <span>Java</span>
+      <span>Java Swing</span>
+      <span>MVC</span>
+      <span>JUnit</span>
+      <span>Design Patterns</span>
+    </div>
+
+
+    <div class="card">
+
+      <h3>About the project</h3>
+
+      <p>
+        Pacman - Barbie Edition is a recreation of the classic Pacman
+        game with characters and visual elements inspired by the Barbie
+        universe.
+      </p>
+
+      <p style="margin-top: 14px;">
+        The player controls Barbie through a maze using the keyboard.
+        The goal is to collect all pellets while avoiding the Ken
+        characters moving around the maze. Barbie starts with three
+        lives and loses one when colliding with a Ken.
+      </p>
+
+      <p style="margin-top: 14px;">
+        The game also includes several power-ups that temporarily
+        change the behaviour of the player or enemies.
+      </p>
+
+    </div>
+
+
+    <div class="two-col" style="margin: 32px 0;">
+
+      <img
+        src="../assets/project2.png"
+        alt="Pacman Barbie Edition start screen"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+      <img
+        src="../assets/project2-1.png"
+        alt="Pacman Barbie Edition gameplay"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Software architecture</h3>
+
+      <p>
+        The application was built in Java Swing and structured according
+        to the Model-View-Controller architecture.
+      </p>
+
+      <p style="margin-top: 14px;">
+        The Model contains the game logic and components, the View is
+        responsible for displaying the game, and the Controller handles
+        keyboard input and communication between the different parts
+        of the application.
+      </p>
+
+      <p style="margin-top: 14px;">
+        This separation of responsibilities helped keep the application
+        modular and made individual components easier to maintain and test.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Design patterns</h3>
+
+      <p>
+        Several design patterns were used throughout the project,
+        including Observer, Strategy, State and Factory.
+      </p>
+
+      <p style="margin-top: 14px;">
+        The Strategy pattern was used to implement different behaviours
+        for the Ken characters. Their movement can switch between
+        attack, scatter and random strategies depending on the state
+        of the game.
+      </p>
+
+      <p style="margin-top: 14px;">
+        The State pattern was used for temporary changes in game
+        behaviour, while Observer helped maintain communication between
+        components without tightly coupling them together.
+      </p>
+
+    </div>
+
+
+    <div class="two-col" style="margin: 32px 0;">
+
+      <img
+        src="../assets/project2-3.png"
+        alt="Pacman victory screen"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+      <img
+        src="../assets/project2-5.png"
+        alt="Pacman game over screen"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+    </div>
+      <div class="two-col" style="margin: 32px 0;">
+
+      <img
+        src="../assets/project2-4.png"
+        alt="Pacman victory screen"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+      <img
+        src="../assets/project2-2.png"
+        alt="Pacman game over screen"
+        style="border-radius:18px; box-shadow:var(--shadow);"
+      >
+
+    </div>
+
+
+    <div class="two-col">
+
+      <div class="card">
+        <h3>Testing</h3>
+
+        <p>
+          JUnit tests were used throughout development to test individual
+          components and verify that the game logic behaved as expected.
+        </p>
+      </div>
+
+
+      <div class="card">
+        <h3>Development process</h3>
+
+        <p>
+          The project was developed collaboratively using user stories,
+          acceptance criteria and a Definition of Done. The development
+          process also included user feedback, domain modelling and
+          regular team meetings.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="card" style="margin-top: 10px;">
+
+      <h3>What I learned</h3>
+
+      <p>
+        The project gave me practical experience with object-oriented
+        software development, software architecture, design patterns,
+        automated testing and collaborative software development.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+
+    <p>&copy; 2026 Hanna Magnusson</p>
+
+    <div class="footer-links">
+      <a
+        href="https://www.linkedin.com/in/hanna-magnusson-28787324a"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
+      <a href="mailto:hanna012008@hotmail.com">
+        Email
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

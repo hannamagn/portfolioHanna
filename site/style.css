@@ -448,6 +448,7 @@ form.contact-form textarea:focus{
 }
 form.contact-form textarea{ resize: vertical; min-height: 120px; }
 
+
 /* ---------- Responsive ---------- */
 @media (max-width: 880px){
   nav.main-nav{
