@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VibeTribe — Hanna Magnusson</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="logo">Hanna Magnusson</a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      &#9776;
+    </button>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+<section class="section">
+
+<div class="wrap">
+
+  <a href="../portfolio.html" class="project-link">
+    ← Back to projects
+  </a>
+
+
+  <div class="section-head" style="margin-top:32px;">
+
+    <h2>VibeTribe</h2>
+
+    <p>
+      A full-stack social platform designed for music lovers,
+      built around communities, content creation and shared
+      musical interests.
+    </p>
+
+  </div>
+
+
+  <div class="project-tags" style="margin-bottom:32px;">
+    <span>React</span>
+    <span>JavaScript</span>
+    <span>REST API</span>
+    <span>React Hooks</span>
+    <span>Bootstrap</span>
+    <span>UX</span>
+  </div>
+
+
+  <div class="card">
+
+    <h3>About the project</h3>
+
+    <p>
+      VibeTribe is an online community platform created specifically
+      for music enthusiasts. The idea was to create a space where
+      people could connect through shared musical interests rather
+      than through a traditional social media feed.
+    </p>
+
+    <p style="margin-top:14px;">
+      Users can explore communities called "tribes", each centered
+      around a particular genre or musical interest. After creating
+      an account, users can create their own tribes and publish posts
+      containing recommendations, playlists, experiences and
+      discussions about music.
+    </p>
+
+    <p style="margin-top:14px;">
+      The project focused both on building the functionality of a
+      full-stack web application and on designing a simple,
+      accessible user experience.
+    </p>
+
+  </div>
+
+
+  <div style="margin:32px 0;">
+
+    <img
+      src="../assets/vibetribe-home.png"
+      alt="VibeTribe homepage showing music tribes"
+      style="width:100%; border-radius:18px; box-shadow:var(--shadow);"
+    >
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Communities and posts</h3>
+
+    <p>
+      The main concept behind VibeTribe is the tribe system.
+      Tribes act as smaller communities where users with similar
+      musical interests can interact.
+    </p>
+
+    <p style="margin-top:14px;">
+      Visitors can browse existing tribes without being logged in,
+      while registered users gain access to additional functionality
+      such as creating new tribes and publishing posts.
+    </p>
+
+    <p style="margin-top:14px;">
+      Posts can be used to recommend music, share playlists or simply
+      start conversations about artists, genres and songs.
+    </p>
+
+  </div>
+
+
+  <div class="two-col" style="margin:32px 0;">
+
+    <img
+      src="../assets/vibetribe-desktop.png"
+      alt="VibeTribe desktop interface"
+      style="border-radius:18px; box-shadow:var(--shadow);"
+    >
+
+    <img
+      src="../assets/vibetribe-mobile.png"
+      alt="VibeTribe mobile interface"
+      style="border-radius:18px; box-shadow:var(--shadow);"
+    >
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Frontend architecture</h3>
+
+    <p>
+      The frontend was built with React and structured around
+      reusable components such as TribeList, Account, SignUp and
+      CreateTribe.
+    </p>
+
+    <p style="margin-top:14px;">
+      React's component-based architecture allowed different parts
+      of the application to remain separated while still being
+      reusable throughout the interface.
+    </p>
+
+    <p style="margin-top:14px;">
+      We also applied several SOLID principles when structuring the
+      application. Components were designed around individual
+      responsibilities, while API communication was separated from
+      the user interface through a service layer.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>State management</h3>
+
+    <p>
+      React hooks were used throughout the application to manage
+      state and communication between components.
+    </p>
+
+    <p style="margin-top:14px;">
+      useState handles local component state, while useEffect is used
+      when data such as tribes and posts needs to be fetched from the
+      backend.
+    </p>
+
+    <p style="margin-top:14px;">
+      User authentication is shared across the application using
+      useContext. A UserContext stores information about the logged-in
+      user so that components can adapt their behaviour depending on
+      the current session.
+    </p>
+
+  </div>
+
+
+  <div class="two-col" style="margin:32px 0;">
+
+    <img
+      src="../assets/vibetribe-login.png"
+      alt="VibeTribe login interface"
+      style="border-radius:18px; box-shadow:var(--shadow);"
+    >
+
+    <img
+      src="../assets/vibetribe-errors.png"
+      alt="VibeTribe form validation"
+      style="border-radius:18px; box-shadow:var(--shadow);"
+    >
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Authentication and validation</h3>
+
+    <p>
+      VibeTribe includes a complete account flow where users can
+      register and log in before accessing functionality that modifies
+      the platform.
+    </p>
+
+    <p style="margin-top:14px;">
+      Authentication state is also used for authorization. For example,
+      users who are not logged in can browse tribes but cannot create
+      a new tribe or publish content.
+    </p>
+
+    <p style="margin-top:14px;">
+      The forms include validation and clear error feedback. Invalid
+      usernames, email addresses and passwords display messages
+      directly next to the relevant input, helping users understand
+      what needs to be corrected.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Backend and API communication</h3>
+
+    <p>
+      The frontend communicates asynchronously with the backend
+      through API requests for functionality such as authentication,
+      tribe management and post management.
+    </p>
+
+    <p style="margin-top:14px;">
+      API logic was abstracted into separate service functions rather
+      than being handled directly inside the UI components. This keeps
+      the frontend components focused on presentation and interaction
+      while reducing dependencies between different parts of the
+      application.
+    </p>
+
+    <p style="margin-top:14px;">
+      Posts can be created, fetched, updated and deleted through
+      dedicated API routes, while React updates the interface with
+      the resulting data.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>User experience</h3>
+
+    <p>
+      The interface was designed to keep the communities themselves
+      at the center of the experience. Tribes are displayed as
+      scrollable cards so users can quickly explore different
+      communities without overwhelming the page.
+    </p>
+
+    <p style="margin-top:14px;">
+      The application was also designed responsively for both desktop
+      and mobile devices. Navigation follows familiar patterns and
+      Bootstrap components were used for parts of the interface to
+      maintain visual consistency.
+    </p>
+
+    <p style="margin-top:14px;">
+      Post creation is handled through a modal rather than permanently
+      displaying additional form fields, keeping the main interface
+      cleaner.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>What I learned</h3>
+
+    <p>
+      VibeTribe gave me practical experience developing a larger
+      React application where frontend architecture, backend
+      communication and user experience all needed to work together.
+    </p>
+
+    <p style="margin-top:14px;">
+      The project strengthened my understanding of component-based
+      development, React hooks, authentication flows, API integration
+      and separation of responsibilities within a web application.
+    </p>
+
+    <p style="margin-top:14px;">
+      It also highlighted how technical decisions such as state
+      management, validation and API abstraction directly affect
+      both maintainability and the experience of the end user.
+    </p>
+
+  </div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="wrap">
+
+    <p>&copy; 2026 Hanna Magnusson</p>
+
+    <div class="footer-links">
+
+      <a
+        href="https://www.linkedin.com/in/hanna-magnusson-28787324a"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
+      <a href="mailto:hanna012008@hotmail.com">
+        Email
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
