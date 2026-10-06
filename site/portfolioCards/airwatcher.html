@@ -70,7 +70,7 @@
 
     <div class="card">
 
-      <h3>About the project</h3>
+      <h3>About the group project</h3>
 
       <p>
         AirWatcher is a C++ console application developed to monitor
@@ -185,75 +185,6 @@
     </div>
 
 
-    <div class="card">
-
-      <h3>Sensor reliability</h3>
-
-      <p>
-        One algorithm I worked with in detail was the sensor reliability
-        analysis. Its purpose is to detect suspicious measurements and
-        prevent unreliable data from affecting later air quality
-        calculations.
-      </p>
-
-      <p style="margin-top: 14px;">
-        The algorithm iterates through the measurements associated with
-        a sensor and checks whether the values fall within an accepted
-        range. Measurements outside this range can indicate manipulated
-        data, faulty sensors or unrealistic pollution values.
-      </p>
-
-      <p style="margin-top: 14px;">
-        If suspicious data is detected, the sensor is classified as
-        unreliable and its measurements can be removed from future
-        calculations. Since the measurements only need to be traversed
-        once, the algorithm has a linear time complexity of O(n).
-      </p>
-
-    </div>
-
-
-    <div class="two-col">
-
-      <div class="card">
-
-        <h3>Security</h3>
-
-        <p>
-          The application includes authentication and role-based
-          functionality for different types of users.
-        </p>
-
-        <p style="margin-top: 14px;">
-          We also considered risks such as unauthorized access,
-          manipulated sensor measurements, file tampering and
-          malformed user input.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>Performance</h3>
-
-        <p>
-          Performance was another requirement of the project.
-          Execution time can be measured using C++ timing functionality,
-          allowing algorithms to be benchmarked during testing.
-        </p>
-
-        <p style="margin-top: 14px;">
-          This made it possible to evaluate how the system performs
-          and provides a foundation for future optimization as the
-          amount of sensor data increases.
-        </p>
-
-      </div>
-
-    </div>
-
-
     <div class="card" style="margin-top: 10px;">
 
       <h3>What I learned</h3>
@@ -269,13 +200,6 @@
         handling, performance evaluation and security considerations.
         It also showed how architectural decisions can make a system
         easier to maintain, test and extend.
-      </p>
-
-      <p style="margin-top: 14px;">
-        Working with sensor reliability was particularly interesting,
-        as it connected algorithm design with a real problem: ensuring
-        that incorrect or manipulated data does not compromise the
-        results produced by the system.
       </p>
 
     </div>
